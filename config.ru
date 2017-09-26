@@ -44,7 +44,7 @@ map '/tagdat' do
     domain = '%' if req['domain'].nil? or domain.size < 1
 
     begin
-      db = Mysql.new(ENV['OPENSHIFT_MYSQL_DB_HOST'],ENV['OPENSHIFT_MYSQL_DB_USERNAME'],ENV['OPENSHIFT_MYSQL_DB_PASSWORD'],$database,ENV['OPENSHIFT_MYSQL_DB_PORT'].to_i(10))
+      db = Mysql.new(ENV['MYSQL_SERVICE_HOST'],ENV['OPENSHIFT_MYSQL_DB_USERNAME'],ENV['OPENSHIFT_MYSQL_DB_PASSWORD'],$database,ENV['MYSQL_SERVICE_PORT'].to_i(10))
 
 #      begin
 #        select = db.prepare "insert ignore into etaoin (time,id,seq,agent,url,query) VALUES (unix_timestamp(),?,?,?,?,?);"
