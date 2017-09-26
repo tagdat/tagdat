@@ -1,4 +1,4 @@
-var tagdat_api_url = "https://tagdat-montroseacademy.rhcloud.com/tagdat?";
+var tagdat_api_url = "https://tagdat-tagdat.1d35.starter-us-east-1.openshiftapps.com/tagdat?";
 var tagdat_option_list = ['item','parent','domain','limit'];
 var tagdat_locks = true;
 
